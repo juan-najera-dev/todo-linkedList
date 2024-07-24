@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <title>Gestión de Tareas</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <!-- form -->
+      <form class="tasks-form">
+        <p class="alert"></p>
+        <div class="main-title">
+          <h2>Gestor de Tareas</h2>
+        </div>
+        <p>Agrega tus tareas</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="task-title"
+            placeholder="¿Qué tienes por hacer?"
+          />
+          <button type="submit" class="submit-btn">añadir tarea</button>
+          <button id="undo-btn" class="undo-btn">eliminar última tarea</button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="tasks-container">
+        <div class="tasks-list"></div>
+        <div class="clear-btn-container">
+          <button class="clear-btn">limpiar lista</button>
+        </div>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
